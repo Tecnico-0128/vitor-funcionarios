@@ -136,9 +136,3 @@ function listar_ativos() {
     }
 }
 
-// function listar_demitidos() {
-//     dados.innerHTML = "lista2"
-//     for (let cliente of clientes) {
-//         dados.innerHTML += `<p>Nome: ${cliente.nome} | CPF: ${cliente.cpf} | Telefone:: ${cliente.telefone}</p>`
-//     }
-// }
