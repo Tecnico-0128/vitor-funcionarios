@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Funcionario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer> </script>
+</head>
+<body>
+
+<div>
+    <h1>Alterações de salario</h1>
+    <div class="menu">
+        <a href="cad_func.html" > Cadastro / </a>
+        <a href="AlteraçãodeSalário.html"> Alterar Salário / </a>
+        <a href="DemissãodeFuncionário.html"> Demissão / </a>
+        <a href="ListagemdeFuncionários.html" class="ativo"> Listagem / </a>
+    </div>
+    <div class="formulario">
+            <h2> listagem </h2>
+         
+            <label>Cpf</label><br>
+            <input id="cpf_listar" type="text"><br><br>
+            <button onclick="buscar()">buscar</button>
+        </div>
+          <div class="principal" id="lista"></div>
+            <div class="principal" id="lista2"></div>
+
+</body>
+</html>

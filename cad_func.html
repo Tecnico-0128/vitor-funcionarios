@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Funcionario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer> </script>
+</head>
+<body>
+
+<div>
+    <h1>Controle de Funcionários</h1>
+    <div class="menu">
+   <a href="cad_func.html" class="ativo" > Cadastro / </a>
+        <a href="AlteraçãodeSalário.html"> Alterar Salário / </a>
+        <a href="DemissãodeFuncionário.html"> Demissão / </a>
+        <a href="ListagemdeFuncionários.html"> Listagem / </a>
+    </div>
+    <div class="formulario">
+            <h2> Cadastrar funcionario </h2>
+            <label>Nome:</label><br>
+            <input id="nome" type="text"><br><br>
+            <label>cpf:</label><br>
+            <input id="cpf" type="text"><br><br>
+            <label>Data de nascimento:</label><br>
+            <input id="data" type="text"><br><br>
+             <label>salario:</label><br>
+            <input id="salario" type="number"><br><br>
+             <label>função:</label><br>
+            <input id="funcao" type="text"><br><br>
+            <button onclick="cad_funcionario()" >cadastrar</button>
+        </div>
+
+</body>
+</html>
