@@ -108,7 +108,7 @@ function Demitir() {
             }
         }
     } else {
-        alert("Preencha todos os campos!")
+        alert("Preencha todos o campos!")
         return
     }
     alert("Cliente não encontrado!")
@@ -119,8 +119,9 @@ function buscar() {
     for (let buscar of funcionarios) {
         if (buscar.cpf == cpf_listar.value) {
             listar_ativos()
+             listar_demitidos()
             achou = true
-            // listar_demitidos()
+        
         }
     }
     if (!achou) {
@@ -132,7 +133,18 @@ function buscar() {
 function listar_ativos() {
     lista.innerHTML = "lista"
     for (let f of funcionarios) {
+
+        if (f.status === "ativo"){
         lista.innerHTML += `<p>Nome: ${f.nome} | CPF: ${f.cpf} | status:: ${f.status}</p>`
+        }
     }
 }
-
+function listar_demitidos() {
+    lista2.innerHTML = "Demitido"
+    for (let f of funcionarios) {
+        
+        if (f.status === "Demitido"){
+        lista2.innerHTML += `<p>Nome: ${f.nome} | CPF: ${f.cpf} | status:: ${f.status}</p>`
+        }
+    }
+}
